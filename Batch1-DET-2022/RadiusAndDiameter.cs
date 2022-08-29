@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,4 +29,4 @@ namespace Batch1_DET_2022
                 Console.WriteLine($"the diameter is{diameter}");
             }
         }
-    }
+    }*/
