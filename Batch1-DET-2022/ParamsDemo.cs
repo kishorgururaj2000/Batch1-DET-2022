@@ -15,7 +15,7 @@ namespace Batch1_DET_2022
                 sum += 1;
             return sum;
         }
-        public static void Main()
+        public void Main()
         {
             Console.WriteLine(Sum(1, 2, 3));
             Console.WriteLine(Sum(1, 2, 3,4,5,6,7,8,9,10));

@@ -15,7 +15,7 @@ namespace Batch1_DET_2022
                 sum += i;
             return sum;
         }
-        public static void Main()
+        public  void Main()
         {
             int x;
             try
