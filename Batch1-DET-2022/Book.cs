@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace Batch1_DET_2022
 {
-    internal class Book
+    internal class IBook
     {
         public string Name { get; set; }
         public int Price { get; set; }
         public int Qty { get; set; }
         public Author author { get; set; }  //containment
+        public string BookName { get; internal set; }
+        public int BookID { get; internal set; }
 
         public override string ToString()
         {
@@ -23,7 +25,7 @@ namespace Batch1_DET_2022
     {
         public static void Main()
         {
-            Book b = new Book
+            IBook b = new IBook
             {
                 Name = "Mastering C#",
                 author = new Author { Name = "Mary", EMail = "mary.s", Gender = 'f' },
@@ -32,7 +34,7 @@ namespace Batch1_DET_2022
             };
 
             Author alex = new Author { Name = "Roja", EMail = "roja.p", Gender = 'f' };
-            Book dummyBook = new Book { Name = "C#", author = alex, Price = 19, Qty = 99 };
+            IBook dummyBook = new IBook { Name = "C#", author = alex, Price = 19, Qty = 99 };
         }
     }
 }
